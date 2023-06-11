@@ -1,4 +1,47 @@
 body{
     background-image: url("images/body-background.jpg");
-
+    
+}
+.sidesTable{
+    width: 100%;
+    height: 100%;
+}
+.imageListTabletd{
+    width: 70%;
+    height: 80%;
+    background-color: black;
+    border-radius: 25px;
+}
+.row{
+    width: 100%;
+}
+.welcomeTextp{
+    max-height: 50px;
+    top: 20px;
+    text-align: center;
+    font-size: 80px;
+}
+.listImageTable{
+    width: 100%;
+    height: 700px;
+    border-spacing: 20px;
+}
+.listImageTableheader{
+    height: 1px;
+    width: 25%;
+}
+.ImageItem{
+    background-image: linear-gradient(rgb(63, 63, 63),black);
+    border-radius: 20px;
+}
+.image{
+    margin-bottom: 0px;
+    filter: contrast(1);
+    filter: grayscale(1);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+    width: 80%;
+    height: 150px;
 }
