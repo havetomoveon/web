@@ -18,6 +18,4 @@ for(let d = 0; d < 11; d++){
         tr = ele.lastChild;
         tr.appendChild(td);
     }
-
-
 }
