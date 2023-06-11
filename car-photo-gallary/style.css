@@ -3,6 +3,8 @@ body{
     
 }
 .sidesTable{
+    position: relative;
+    top: 80px;
     width: 100%;
     height: 100%;
 }
@@ -14,12 +16,6 @@ body{
 }
 .row{
     width: 100%;
-}
-.welcomeTextp{
-    max-height: 50px;
-    top: 20px;
-    text-align: center;
-    font-size: 80px;
 }
 .listImageTable{
     width: 100%;
