@@ -18,6 +18,12 @@ for(let d = 0; d < 11; d++){
         tr = ele.lastChild;
         tr.appendChild(td);
     }
-
-
 }
+function colorChange(ele){
+    let r = Math.floor(Math.random()*300);
+    let b = Math.floor(Math.random()*300);
+    let g = Math.floor(Math.random()*300);
+    ele.style.color = `rgb(${r},${b},${g})`}
+
+
+
