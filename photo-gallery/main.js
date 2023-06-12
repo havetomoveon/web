@@ -26,6 +26,7 @@ function imagesLoad(id){
         let td = document.createElement("td");
         let img = document.createElement("img");
         td.className = "ImageItem";
+        td.setAttribute("id","ImageItem")
         img.className = "image";
         img.src = `images/${file_name}-${d}.jpg`;
         td.appendChild(img);
@@ -41,6 +42,7 @@ function imagesLoad(id){
         }
         }
     }
+
 imagesLoad();
 rightSideList.onclick = function (eve){
     let id = eve.target.id;
