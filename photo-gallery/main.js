@@ -51,3 +51,42 @@ rightSideList.onclick = function (eve){
         imagesLoad(id)
     }
 };
+function buttonChangeColor(id){
+    let ele = document.getElementById(id) 
+    let r = 143,g= 183,b= 189;
+    return function(){
+        r--;g--;b--
+    if (r == 0){
+        r = 143,g= 183,b= 189;
+    }
+    ele.style.color = `rgb(${r},${g},${b})`
+    }
+}
+let changeColora = buttonChangeColor("flowerGalleryP")
+let changeColorb = buttonChangeColor("backgroundGalleryP")
+let changeColorc = buttonChangeColor("carGalleryP")
+flowerGalleryP.onmouseenter = function(){
+    let id = setInterval(changeColora,5)
+    flowerGalleryP.onmouseleave = function(){
+        clearInterval(id)
+        let ele = document.getElementById("flowerGalleryP") 
+        ele.style.color = `rgb(${143},${183},${189})`
+    }
+}
+backgroundGalleryP.onmouseenter = function(){
+    let id = setInterval(changeColorb,5)
+    backgroundGalleryP.onmouseleave = function(){
+
+        clearInterval(id)
+        let ele = document.getElementById("backgroundGalleryP") 
+        ele.style.color = `rgb(${143},${183},${189})`
+    }
+}
+carGalleryP.onmouseenter = function(){
+    let id = setInterval(changeColorc,5)
+    carGalleryP.onmouseleave = function(){
+        clearInterval(id)
+        let ele = document.getElementById("carGalleryP") 
+        ele.style.color = `rgb(${143},${183},${189})`
+    }
+}
