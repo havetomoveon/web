@@ -1,3 +1,4 @@
+
 function imagesLoad(id){
     let file_name;
     switch (id){
@@ -26,7 +27,8 @@ function imagesLoad(id){
         let td = document.createElement("td");
         let img = document.createElement("img");
         td.className = "ImageItem";
-        td.setAttribute("id","ImageItem")
+        td.setAttribute("id",`${file_name}-${d}`)
+        img.setAttribute("id",`${file_name}-${d}`)
         img.className = "image";
         img.src = `images/${file_name}-${d}.jpg`;
         td.appendChild(img);
